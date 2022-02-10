@@ -1,0 +1,85 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier", "import", "react-hooks"],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": ["off"],
+    "prettier/prettier": "error",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "import/no-unresolved": [2, { "caseSensitive": false }],
+    "import/extensions": "off",
+    "import/no-named-as-default": 0,
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".tsx"]
+      }
+    ],
+    "react/destructuring-assignment": [0, "never"],
+    "react/jsx-props-no-spreading": [
+      0,
+      {
+        "html": "ignore",
+        "custom": "ignore",
+        "explicitSpread": "ignore"
+      }
+    ],
+    "no-shadow": ["warn"],
+    "@typescript-eslint/no-explicit-any": "off",
+    "import/prefer-default-export": "off",
+    "import/no-cycle": "off",
+    "no-plusplus": "off",
+    "no-debugger": "off",
+    "no-param-reassign": "off",
+    "import/named": "off",
+    "no-console": "off",
+    "react/jsx-wrap-multilines": "off",
+    "@typescript-eslint/camelcase": "off",
+    "react/jsx-curly-newline": "off",
+    "consistent-return": "off",
+    "array-callback-return": "off",
+    "no-nested-ternary": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/no-array-index-key": "off",
+    "react/require-default-props": "off"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".json", ".native.js", ".ts", ".tsx"]
+      },
+      "typescript": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".json", ".native.js", ".ts", ".tsx"]
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "module": "ES2015",
+        "lib": ["ES2015","ESNext.String"],
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "jsx": "react-native",
+        "allowJs": false,
+        "types": ["node"],
+        "noUnusedLocals":true
+        // "strict": true
+    },
+    "include": [
+      "src/**/*",
+      "Reactotron.js",
+      "test_data/data.js",
+      "node_modules/@types/jest/index.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts",
+        "**/*.js"
+    ],
+    "rules":{
+        "semicolon":true
+    }
+}

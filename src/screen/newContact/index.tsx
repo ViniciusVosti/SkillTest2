@@ -46,7 +46,7 @@ const NewContact: React.FC<NewContactProps> = (props) => {
             console.log('err', err);
             setLoading(false);
         });
-    })
+    }, [])
 
     const saveForm = () => {
         if (!loading_button) {

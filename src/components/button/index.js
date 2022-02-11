@@ -8,7 +8,7 @@ import { Icon } from '../../components';
 import TouchableScale from 'react-native-touchable-scale';
 
 export const Button = (props) => {
-    let {
+    const {
         text = 'Insira um texto', color = colors.dark, backgroundColor = colors.yellow,
         marginBottom = 16, borderRadius = 8, height = null,
         outline = false, flexDirection = 'column',
